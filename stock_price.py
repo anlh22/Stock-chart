@@ -18,7 +18,6 @@ with open(ticker_file) as csvfile:
 
     filtered_data = []
     for row in reader:
-        print(row)
         date = row["Date"]
         date = datetime.strptime(date, '%m/%d/%y').date()
 
