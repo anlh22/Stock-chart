@@ -3,10 +3,10 @@ from datetime import datetime
 import plotly.express as px
 
 # get input from user
-ticker = input("enter stock ticker: ")
-start_date = input("enter start date (mm/dd/yy): ")
+ticker = input("Enter stock ticker (AAPL/AMZN/GOOG/MSFT/NFLX/NVDA/TSLA: ")
+start_date = input("Enter start date (mm/dd/yy): ")
 start_date = datetime.strptime(start_date, '%m/%d/%y').date()
-end_date = input("enter end date (mm/dd/yy): ")
+end_date = input("Enter end date (mm/dd/yy): ")
 end_date = datetime.strptime(end_date, '%m/%d/%y').date()
 
 ticker_file = f'/Users/andrewhuang/PycharmProjects/stock chart/data/{ticker.upper()}.csv'
